@@ -227,7 +227,7 @@ to the function.
 
 let say_hello (name : string) : string =
   if String.lowercase_ascii (name) = "gabby"
-    then "Hi Gabby. Welcome home! How are you today?"
+    then "Hi " ^ name ^ ". Welcome home! How are you today?"
   else "Hi " ^ name ^ ". How are you today?";;
 
 (*......................................................................
