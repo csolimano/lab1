@@ -120,9 +120,9 @@ like.
      / \
     /   \
    ~-    3
-  /
- /
-5
+   |
+   |
+   5
 *)
 (*......................................................................
 Exercise 5: Associativity plays a role in cases when two operators
@@ -205,7 +205,7 @@ functions in the lab to get some practice with automated unit testing.
 ......................................................................*)
 
 let square (x : int) : int  =
-  (int_of_float ((float_of_int x) ** 2.)) ;;
+  x * x ;;
 
 let exercise7 = square 5;;
 
